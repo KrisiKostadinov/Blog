@@ -1,0 +1,99 @@
+﻿:root {
+    --color-hr: #447fff;
+    --box-shadow-section: 0 0 20px #00000022;
+    --background-color-section: #0051ff;
+}
+
+.container {
+    display: flex;
+}
+
+.left-navbar {
+    width: 14em;
+    background-color: var(--background-color-section);
+    height: 100vh;
+    box-shadow: var(--box-shadow-section);
+    position: relative;
+}
+
+.left-navbar-auto {
+    width: auto;
+}
+
+.left-navbar a {
+    font-size: 0.7em;
+}
+
+.left-navbar button {
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    top: -2em;
+    right: -2em;
+    border-radius: 2em;
+    border: none;
+    box-shadow: var(--box-shadow-section);
+    background-color: #fff;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+    .left-navbar button:hover {
+        box-shadow: var(--box-shadow-section);
+        background-color: var(--background-color-section);
+        color: #fff;
+    }
+
+.left-navbar hr {
+    width: 90%;
+    height: 2px;
+    border: none;
+    background-color: var(--color-hr);
+    margin: 10px auto;
+}
+
+.left-navbar ul li {
+    padding: 1em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+    .left-navbar ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+        .left-navbar ul li a i {
+            margin: 0 auto;
+        }
+
+    .left-navbar ul li:hover {
+        background-color: #fff;
+        border-left: 0.2em solid #447fff;
+    }
+
+        .left-navbar ul li:hover > a {
+            color: #447fff;
+            font-weight: bold;
+        }
+
+@media only screen and (max-width: 700px) {
+    .left-navbar {
+        width: auto;
+    }
+
+        .left-navbar span {
+            display: none;
+        }
+
+        .left-navbar:hover {
+            position: absolute;
+            width: 20em;
+        }
+
+            .left-navbar:hover span {
+                display: inline-block;
+            }
+}

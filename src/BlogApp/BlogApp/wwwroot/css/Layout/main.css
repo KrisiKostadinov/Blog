@@ -1,0 +1,100 @@
+﻿@import './reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #3776ff;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    background-color: #f7f7f7;
+    font-size: 20px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+label {
+    font-size: 20px;
+}
+
+label,
+li,
+input {
+    font-family: cursive, sans-serif;
+}
+
+.navbar-list {
+    display: flex;
+    margin: 0 auto;
+}
+
+.navbar-list-left {
+    text-align: left;
+}
+
+.navbar-list-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-list li {
+    padding: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+
+.navbar-list li:hover,
+.navbar-list li:hover > a,
+.navbar-list li:focus,
+.navbar-list li:focus > a {
+    color: #3776ff;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar-list {
+        display: block;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .navbar-list-left {
+        text-align: center;
+    }
+
+    .navbar-list-right {
+        display: block;
+        text-align: center;
+    }
+}

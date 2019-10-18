@@ -1,0 +1,35 @@
+﻿main {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    margin-top: 2em;
+    border-collapse: collapse;
+}
+
+    table thead th {
+        border: none;
+    }
+
+    table thead tr {
+        color: #fff;
+        background-color: #1b32ff;
+    }
+
+    table tbody tr:hover {
+        background-color: #daf7ff;
+    }
+
+    table tbody tr {
+        transition: 0.2s;
+    }
+
+        table tbody tr td {
+            color: #222;
+        }
+
+table, th, td {
+    text-align: center;
+    padding: 1em;
+}

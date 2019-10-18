@@ -1,0 +1,42 @@
+﻿header {
+    box-shadow: var(--box-shadow-section);
+}
+
+.navbar {
+    width: 100%;
+    height: 4em;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .navbar .user {
+        color: #447fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: monospace, sans-serif;
+    }
+
+    .navbar ul li {
+        max-width: 120px;
+        line-height: 4em;
+    }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #447fff;
+        }
+
+        .navbar ul li img {
+            width: 100%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }

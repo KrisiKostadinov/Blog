@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewData["Title"] = "AdminLayout";
+    Layout = null;
+}
+
+<link href="~/css/Admin/admin.css" rel="stylesheet" />
+<header>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a asp-controller="Admin" asp-action="Index">
+                    <img src="http://inddc.in/webroot/assets/img/sample/shortcode/logo/1.png">
+                </a>
+            </li>
+            <li class="user">
+                Admin
+            </li>
+            <li class="user">
+                <a href="#">Gosho Goshov</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <nav class="left-navbar">
+        <button class="left-navbar-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul>
+            <li>
+                <a asp-action="Index">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Табло</span>
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a asp-action="AllUsers">
+                    <i class="fas fa-users"></i>
+                    <span>Потребители</span>
+                </a>
+            </li>
+            <li>
+                <a asp-action="AllPosts">
+                    <i class="fas fa-th"></i>
+                    <span>Публикации</span>
+                </a>
+            </li>
+            <li>
+                <a asp-action="AllCategories">
+                    <i class="fas fa-list"></i>
+                    <span>Категории</span>
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="#">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Нов потребител</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-plus"></i>
+                    <span>Нова категория</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-plus"></i>
+                    <span>Нова публикация</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main class="admin-main">
+        @RenderBody()
+    </main>
+</div>

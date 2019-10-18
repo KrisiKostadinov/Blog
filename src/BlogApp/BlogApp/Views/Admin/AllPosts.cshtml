@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "AllPosts";
+    Layout = "~/Views/Admin/AdminLayout.cshtml";
+}
+
+<div class="header">
+    <h4>Неодобрени публикации</h4>
+</div>
+<section class="posts-main">
+    <table>
+        <thead>
+            <tr>
+                <th>Заглавие</th>
+                <th>Име на автора</th>
+                <th colspan="3">Заявки</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>KK</td>
+                <td>krisi@k</td>
+                <td>
+                    <a class="btn success-btn" href="../post/details.html">Виж</a>
+                    <a class="btn edit-btn" href="#">Редактирай</a>
+                    <a class="btn del-btn" href="#">Изтрий</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>KK</td>
+                <td>krisi@k</td>
+                <td>
+                    <a class="btn success-btn" href="#">Виж</a>
+                    <a class="btn edit-btn" href="#">Редактирай</a>
+                    <a class="btn del-btn" href="#">Изтрий</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>

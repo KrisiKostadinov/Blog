@@ -1,0 +1,19 @@
+﻿.btn {
+    color: #fff;
+    padding: 0.2em;
+    text-decoration: none;
+    border-radius: 0.2em;
+    margin: 0 1em;
+}
+
+.success-btn {
+    background-color: #0f0;
+}
+
+.edit-btn {
+    background-color: #00f;
+}
+
+.del-btn {
+    background-color: #f00;
+}

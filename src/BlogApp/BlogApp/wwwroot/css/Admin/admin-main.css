@@ -1,0 +1,11 @@
+﻿.admin-main {
+    width: 100%;
+    padding: 1em;
+}
+
+    .admin-main .header {
+        background-color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-shadow: 0 0 10px #00000022;
+        padding: 1em;
+    }
